@@ -1,0 +1,28 @@
+import { ChartPlugin, ChartMetadata, t, Behavior } from '@superset-ui/core';
+import buildQuery from './foundation/__FAMILY__/buildQuery'; // MortInject: index-foundation-buildQuery
+import controlPanel from './__CONTROL_PANEL_PATH__';
+import transformProps from './plugin/transformProps';
+
+const loadChart = () => import('./foundation/__FAMILY__/Echarts__FAMILY__'); // MortInject: index-foundation-loadChart
+
+const metadata = new ChartMetadata({
+  category: t('ECharts'),
+  credits: ['Apache ECharts'],
+  name: t('__DISPLAY_NAME__'),
+  description: t('__DESCRIPTION__'),
+  thumbnail: __THUMB__,
+  behaviors: [Behavior.InteractiveChart],
+  tags: __TAGS__,
+});
+
+// re-export for submodules that import from "../.."
+export type {
+  EchartsTimeseriesFormData,
+  EchartsTimeseriesChartProps,
+} from './foundation/types'; // MortInject: index-foundation-types
+
+export default class __CLASS_NAME__ extends ChartPlugin {
+  constructor() {
+    super({ buildQuery, controlPanel, loadChart, metadata, transformProps });
+  }
+}

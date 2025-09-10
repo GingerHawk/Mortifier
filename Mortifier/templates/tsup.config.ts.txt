@@ -1,0 +1,32 @@
+import { defineConfig } from 'tsup';
+
+export default defineConfig({
+  entry: ['src/index.ts'],
+  format: ['cjs', 'esm'],
+  dts: true,
+  sourcemap: true,
+  clean: true,
+  treeshake: true,
+  splitting: false,
+  // Keep peers externalized (no bundling). Use strings only, including subpaths.
+  external: [
+    'react',
+    'react-dom',
+    'react/jsx-runtime',
+    'react/jsx-dev-runtime',
+
+    'react-redux',
+    'react-redux/*',
+
+    '@emotion/react',
+    '@emotion/*',
+
+    'echarts',
+    'echarts/*',
+
+    '@superset-ui/core',
+    '@superset-ui/core/*',
+    '@superset-ui/chart-controls',
+    '@superset-ui/chart-controls/*',
+  ],
+});

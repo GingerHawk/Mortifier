@@ -1,0 +1,13 @@
+import upstreamTransformProps from '../foundation/__FAMILY__/transformProps';
+
+
+__DEFAULTS__ 
+
+export default function transformProps(chartProps: any): any {
+  const formData = { ...(chartProps?.formData || {}), ...defaults };
+  const upstream = upstreamTransformProps({ ...chartProps, formData }) as any;
+
+  const options = { ...(upstream?.echartOptions || {}) };
+
+  return { ...upstream, echartOptions: options };
+}
