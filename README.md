@@ -25,12 +25,12 @@ I wanted to round the corners on a bar chart…that's it…I didn't even know wh
 
 [Mortifier: Multi-Series Chart Generator for Apache Superset](https://www.notion.so/Mortifier-Multi-Series-Chart-Generator-for-Apache-Superset-26ac249b027c815290fbfe79ada24b62?pvs=21)
 
-[Technical Architecture: How the Mortifier Works](https://www.notion.so/Technical-Architecture-How-the-Mortifier-Works-26ac249b027c81769730d56545ed82f7?pvs=21)
-
 [Install and Plugin Generation](https://www.notion.so/Install-and-Plugin-Generation-26ac249b027c81c5ba85f66ae7c8cfc0?pvs=21)
 
-[Tooltip Templating](https://www.notion.so/Tooltip-Templating-26ac249b027c80faad49dc9f015758e2?pvs=21)
-
 [Controls Documentation](https://www.notion.so/Controls-Documentation-266c249b027c80118ae3e18b55666dab?pvs=21)
+
+[Technical Architecture: How the Mortifier Works](https://www.notion.so/Technical-Architecture-How-the-Mortifier-Works-26ac249b027c81769730d56545ed82f7?pvs=21)
+
+[Tooltip Templating](https://www.notion.so/Tooltip-Templating-26ac249b027c80faad49dc9f015758e2?pvs=21)
 
 [readme - Caution](https://www.notion.so/readme-Caution-26ac249b027c80f7ad44c75d4c30bc67?pvs=21)
